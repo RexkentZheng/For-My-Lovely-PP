@@ -81,13 +81,13 @@ body {
 
 .page2_welcome div{
 	width: 23.7%;
-	height:15.5%;
+	height:-webkit-calc(99% / 6 - 1%);
 	float: left;
 	text-align: center;
 	background-color: wheat;
 	margin-top: 1%;
 	margin-left: 1%;
-	line-height: 15.5%;
+	line-height: -webkit-calc(99% / 6 - 1%);
 	font-size: 1.5em;
 	font-family: "微软雅黑";
 	display: none;
