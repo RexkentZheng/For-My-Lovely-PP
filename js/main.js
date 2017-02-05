@@ -17,7 +17,7 @@ $(document).ready(function(){
 		//event事件 direction方向  distance距离  duration时间  fingerCount触屏的点数
 		swipe:function(event,direction,distance,duration,fingerCount){
 //			console.log("滑动");
-			if(direction == "up" && nowpage < 4)
+			if(direction == "up" && nowpage < 5)
 			{
 				//?:三目运算符
 //				判断的条件?当条件为真时执行:为假时执行
@@ -41,7 +41,7 @@ $(document).ready(function(){
 		
 	})
 	$(".heart").fadeIn(200,function(){
-		$(".page1_p").fadeIn(200,function () {
+		$(".page1_p").delay(4800).fadeIn(200,function () {
 			$(".top_lip").animate({width:"130%",height:"25%",top:"40%",left:"-12%",opacity:'0.4',},{duration:1200})
 			$(".bot_lip").animate({width:"130%",height:"25%",top:"65%",left:"-12%",opacity:'0.4',},{duration:1200}) 
 			$(".bot_lip,.top_lip").fadeOut(200)
@@ -49,38 +49,50 @@ $(document).ready(function(){
 	}) 
 		
 })
-//爱心
-	var c = document.getElementById("left_heart").getContext("2d")
-	c.beginPath()
-	c.strokeStyle = "red"
-	c.arc(100,100,20,0,1*Math.PI,true)
-	c.shadowBlur=10;
-	c.shadowColor = "red"
-	c.stroke()
-	
-	var c = document.getElementById("right_heart").getContext("2d")
-	c.strokeStyle = "red"
-	c.beginPath()
-	c.arc(140,100,20,0,1*Math.PI,true)
-	c.shadowBlur=10;
-	c.shadowColor = "red"
-	c.stroke()
-
-	var c = document.getElementById("left_heart1").getContext("2d")
-	c.strokeStyle = "red"
-	c.beginPath()
-	c.arc(160,100,80,1*Math.PI,0.66*Math.PI,true)
-	c.shadowBlur=10;
-	c.shadowColor = "red"
-	c.stroke()
-	
-	var c = document.getElementById("right_heart1").getContext("2d")
-	c.strokeStyle = "red"
-	c.beginPath() 
-	c.arc(80,100,80,0,0.34*Math.PI,false)
-	c.shadowBlur=10;
-	c.shadowColor = "red"
-	c.stroke()
+$('.first.circle').circleProgress({
+	startAngle: 1*Math.PI,
+	size:50,
+    value: .5,
+    lineCap: 'round',
+    fill: { color: 'red' } ,
+	animation: { duration: 1200, easing: "linear" }
+});
+$('.first.circle').on("circle-animation-end", null,function(){
+	//alert(1);
+	$('.second.circle').circleProgress({
+		startAngle: 1*Math.PI,
+		value: .5,
+		size:50,
+		thickness: '20px',
+		lineCap: 'round',
+		fill: { color: 'red' },
+		animation: { duration: 1200, easing: "linear" }
+	});
+	$('.second.circle').on("circle-animation-end", null,function(){
+		//alert(2);
+		$('.third.circle').circleProgress({
+			startAngle: 0*Math.PI,
+			thickness:3.5,
+			size:200,
+			value: 0.16,
+			lineCap: 'round',
+			fill: { color: 'red' },
+			animation: { duration: 1200, easing: "linear" }
+		});
+		$('.third.circle').on("circle-animation-end", null,function(){
+			//alert(3);
+			$('.forth.circle').circleProgress({
+				startAngle: 0.675*Math.PI,
+				size:200,
+				value: 0.16,
+				thickness:3.5,
+				lineCap: 'round',
+				fill: { color: 'red' },
+				animation: { duration: 1200, easing: "linear" }
+			});
+		});		
+	});
+});
 	
 function animateOfPage(){
 	if(nowpage == 2)
@@ -135,6 +147,8 @@ function animateOfPage(){
 	}
 	else if(nowpage == 3)
 	{
+		
+		$(".page3_words_border,.page3_words").fadeIn(200)
 		
 	//别踩白块
 		$(function(){
@@ -236,7 +250,7 @@ function getRandomNum(_min, _max)
 }
 
 
-
+$(".page5_words,.page5_words_border").fadeIn(200)
 
 
 
