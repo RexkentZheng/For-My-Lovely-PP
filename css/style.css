@@ -46,6 +46,28 @@ body {
 /*	border: 2px beige solid;*/
 }
 
+.heart div{
+	position: absolute;
+}
+
+.first{
+	left: 110px;
+	top: 100px;
+}
+.second{
+	left: 156px;
+	top: 100px;
+}
+.third{
+	top: 26px;
+	left: 6px;
+}
+.forth{
+	top: 25px;
+	left: 110px;
+}
+
+ 
 .page1_p{
 	width: 80%;
 	height: 6%;
@@ -54,7 +76,7 @@ body {
 	font-family: "微软雅黑";
 	position: absolute; 
 	left: 10%;
-	top: 55%;
+	top: 59%;
 	text-align: center;
 	display: none;
 	
@@ -80,19 +102,20 @@ body {
 }
 
 .page2_welcome div{
-	width: 23.7%;
-	height:501%;
+	width: 23.75%;
+	height:500%;
 	float: left;
 	text-align: center;
 	background-color: wheat;
 	margin-top: 1%;
 	margin-left: 1%;
-	line-height:501%;
+	line-height: 500%;
 	font-size: 1.5em;
 	font-family: "微软雅黑";
 	display: none;
 	-webkit-animation: page2_fz 0.5s 1;
 	transition:all 0.5s linear ;
+	border-radius: 12%;
 }
 
 @-webkit-keyframes page2_fz{
@@ -107,6 +130,32 @@ body {
 	position: relative;
 }
 
+.page3_words_border {
+	width: 80%;
+	position: absolute;
+	top: 12%;
+	left: 8%;
+	background-color: deepskyblue;
+	border: 8px blueviolet solid;
+	border-radius: 6%;
+	box-shadow: #666 0px 0px 80px;
+	display: none;
+}
+
+
+
+.page3_words, .page5_words{
+	padding:8%;
+	text-align: left;
+	font-size: 2.1em;
+	font-family: "微软雅黑";
+	display: none;
+}
+
+.page4{
+	background-color: lightblue;
+	position: relative;
+}
 
 #main-screen {
 	width: 100%;
@@ -203,6 +252,14 @@ body {
 }
 
 
-.page4{
-	background-color: lightblue;
+.page5_words_border{
+		width: 80%;
+	position: absolute;
+	top: 8%;
+	left: 8%;
+	background-color: deepskyblue;
+	border: 8px blueviolet solid;
+	border-radius: 6%;
+	box-shadow: #666 0px 0px 80px;
+	display: none;
 }
