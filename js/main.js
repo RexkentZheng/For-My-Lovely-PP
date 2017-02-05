@@ -148,7 +148,8 @@ function animateOfPage(){
 	else if(nowpage == 3)
 	{
 		
-		$(".page3_words_border,.page3_words").fadeIn(200)
+		$(".page3_words_border,.page3_words").fadeIn(1000)
+		$(".page5_words,.page5_words_border").fadeIn(1000)
 		
 	//别踩白块
 		$(function(){
@@ -250,7 +251,7 @@ function getRandomNum(_min, _max)
 }
 
 
-$(".page5_words,.page5_words_border").fadeIn(200)
+$(".page5_words,.page5_words_border").fadeIn(1000)
 
 
 
