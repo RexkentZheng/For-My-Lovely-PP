@@ -261,16 +261,22 @@ $(".page5_words,.page5_words_border").fadeIn(1000)
  }
 
 
-function a() {
-			var audio = document.getElementById('page3_music');
-			if(audio.paused){
-				audio.play();
-			}
-			else{
-				audio.pause();
-			}
-		}
+function playMusic()
+{
 
+	var player = document.getElementById("player")
+
+	if (player.paused)
+	{
+
+		player.play();
+
+	}
+	else{
+		player.pause();
+
+	}
+}
 
 
 	
