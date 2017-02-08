@@ -254,7 +254,9 @@ function getRandomNum(_min, _max)
 $(".page5_words,.page5_words_border").fadeIn(1000)
 
  function showp () {
- 	$('#pi').fadeIn(500);
+ 	$('.page5_words,.page5_words_border').fadeOut(500,function  () {
+ 		$('#pi').fadeIn(500);
+ 	})
  }
 
 
