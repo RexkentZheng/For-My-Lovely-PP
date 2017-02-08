@@ -41,7 +41,7 @@ $(document).ready(function(){
 		
 	})
 	$(".heart").fadeIn(200,function(){
-		$(".page1_p").delay(4800).fadeIn(200,function () {
+		$(".page1_p").delay(4800).fadeIn(500,function () {
 			$(".top_lip").animate({width:"130%",height:"25%",top:"40%",left:"-12%",opacity:'0.4',},{duration:1200})
 			$(".bot_lip").animate({width:"130%",height:"25%",top:"65%",left:"-12%",opacity:'0.4',},{duration:1200}) 
 			$(".bot_lip,.top_lip").fadeOut(200)
@@ -54,7 +54,7 @@ $('.first.circle').circleProgress({
 	size:50,
     value: .5,
     lineCap: 'round',
-    fill: { color: 'red' } ,
+    fill: { color:'#f77a54' } ,
 	animation: { duration: 1200, easing: "linear" }
 });
 $('.first.circle').on("circle-animation-end", null,function(){
@@ -65,7 +65,7 @@ $('.first.circle').on("circle-animation-end", null,function(){
 		size:50,
 		thickness: '20px',
 		lineCap: 'round',
-		fill: { color: 'red' },
+		fill: { color:'#f77a54' },
 		animation: { duration: 1200, easing: "linear" }
 	});
 	$('.second.circle').on("circle-animation-end", null,function(){
@@ -76,7 +76,7 @@ $('.first.circle').on("circle-animation-end", null,function(){
 			size:200,
 			value: 0.16,
 			lineCap: 'round',
-			fill: { color: 'red' },
+			fill: { color:'#f77a54' },
 			animation: { duration: 1200, easing: "linear" }
 		});
 		$('.third.circle').on("circle-animation-end", null,function(){
@@ -87,7 +87,7 @@ $('.first.circle').on("circle-animation-end", null,function(){
 				value: 0.16,
 				thickness:3.5,
 				lineCap: 'round',
-				fill: { color: 'red' },
+				fill: { color:'#f77a54' },
 				animation: { duration: 1200, easing: "linear" }
 			});
 		});		
@@ -253,8 +253,9 @@ function getRandomNum(_min, _max)
 
 $(".page5_words,.page5_words_border").fadeIn(1000)
 
-
-
+ function showp () {
+ 	$('#pi').fadeIn(500);
+ }
 
 
 
