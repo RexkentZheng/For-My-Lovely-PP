@@ -151,6 +151,7 @@ function animateOfPage(){
 		$(".page3_words_border,.page3_words").fadeIn(1000)
 		$(".page5_words,.page5_words_border").fadeIn(1000)
 		
+		
 	//别踩白块
 		$(function(){
 	var screenW = $(window).width();
@@ -198,7 +199,7 @@ function animateOfPage(){
 			} else {
 				clearInterval(timeInterval);
 				$("div[id=retry]").fadeIn().click(function(){
-				var message_text = confirm("示例文字")
+				var message_text = confirm("这东西有一点小BUG，你点击确定整个页面就会刷新到第一页然后重新来一次，你要是点击取消就可以接着下滑啦，小傻逼")
 				if (message_text == true)
 				{window.location.reload();}
 				else
@@ -260,7 +261,15 @@ $(".page5_words,.page5_words_border").fadeIn(1000)
  }
 
 
-
+function a() {
+			var audio = document.getElementById('page3_music');
+			if(audio.paused){
+				audio.play();
+			}
+			else{
+				audio.pause();
+			}
+		}
 
 
 
