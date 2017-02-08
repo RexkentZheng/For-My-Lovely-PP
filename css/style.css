@@ -71,7 +71,7 @@ body {
 .page1_p{
 	width: 80%;
 	height: 6%;
-	color: coral;
+	color: #f87953;
 	font-size:4.3em;
 	font-family: "cute";
 	position: absolute; 
@@ -203,7 +203,7 @@ body {
 	top: 0;
 	left: 35%;
 	z-index: 999;
-	color: #ed6244;
+	color: #f87953;
 	font-weight: bold;
 	line-height: 80px;
 	text-align: center;
