@@ -255,7 +255,7 @@ $(".page5_words,.page5_words_border").fadeIn(1000)
 
  function showp () {
  	$('.page5_words,.page5_words_border').fadeOut(500,function  () {
- 		$('#pi').fadeIn(500);
+ 		$('#pi').animate({width:'90%',height:'33%', left:'5%', top:'40%'})
  	})
  }
 
