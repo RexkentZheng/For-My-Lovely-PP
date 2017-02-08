@@ -27,6 +27,7 @@ body {
 
 .page1{
 	background-color: #fff3d1;
+	color: #f87953;
 }
 
 #left_heart , #left_heart1 , #right_heart , #right_heart1{
@@ -155,6 +156,8 @@ body {
 
 .page4{
 	position: relative;
+	color: #f87953;
+	background: white;
 }
 
 #main-screen {
