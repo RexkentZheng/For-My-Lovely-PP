@@ -272,16 +272,16 @@ body {
 	display: none;
 	color: white;
 	font-family:'cute';
+	z-index: 999;
 }
 
 #pi{
 	border-radius: 8%;
-	width: 90%;
-	height: 33%;
-	display: none;
+	width: 300%;
+	height: 100%;
 	position: absolute;
-	left: 5%;
-	top: 30%;
+	left: -100%;
+	top: 0%;
 }
 
 @font-face {
